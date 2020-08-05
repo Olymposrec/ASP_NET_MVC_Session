@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2>Index2</h2>
+
+<div>
+    @if (HttpContext.Current.Cache["ad"] != null)
+    {
+        var ad = HttpContext.Current.Cache["ad"].ToString();
+        <span>@ad</span>
+    }
+    else
+    {
+        <span>Cache İtem "ad" is removed</span>
+    }
+</div>

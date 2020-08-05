@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewBag.Title = "Homepage2";
+}
+
+<h2>Homepage2</h2>
+<hr />
+Değer:@ViewBag.deger
+<hr />
+@using (Html.BeginForm())
+{
+    <button type="submit" >Session Temizle</button>
+}
+<br />
+<button type="submit">@Html.ActionLink("Session Ekle","Homepage")</button>
